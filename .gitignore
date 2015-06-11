@@ -126,3 +126,6 @@ target/
 
 /debug
 /rectified
+/calib.bat
+/calib.cfg
+/calib0.cfg
