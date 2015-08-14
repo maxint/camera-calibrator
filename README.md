@@ -11,5 +11,10 @@ calibration format](http://docs.opencv.org/modules/calib3d/doc/camera_calibratio
 
 Calculate camera calibration parameters from JPG files.
 ```
-calibrate2.py -w 9 -h 6 -s 0.020588 *.jpg
+calibrate2.py --board_width 9 -board_height 6 -square_size 0.020588 *.jpg
+```
+
+# Help
+```
+calibrate2.py -h
 ```

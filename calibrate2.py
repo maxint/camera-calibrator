@@ -95,9 +95,9 @@ if __name__ == '__main__':
     import argparse
 
     parser = argparse.ArgumentParser(description='Camera calibration tool powered by OpenCV')
-    parser.add_argument('-w', '--board_width', type=int, default=9, help='number of board columns')
-    parser.add_argument('-h', '--board_height', type=int, default=6, help='number of board rows')
-    parser.add_argument('-s', '--square_size', type=float, default=1.0, help='square size (m)')
+    parser.add_argument('--board_width', type=int, default=9, help='number of board columns')
+    parser.add_argument('--board_height', type=int, default=6, help='number of board rows')
+    parser.add_argument('--square_size', type=float, default=1.0, help='square size (m)')
     parser.add_argument('--rectified_dir', default='debug', help='rectified image directory')
     parser.add_argument('--debug_dir', default='debug', help='debug output directory')
     parser.add_argument('-o', '--save_file', default='calib.cfg', help='final calibration file')
