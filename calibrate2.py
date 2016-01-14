@@ -95,13 +95,13 @@ if __name__ == '__main__':
     import argparse
 
     parser = argparse.ArgumentParser(description='Camera calibration tool powered by OpenCV')
-    parser.add_argument('--board_width', type=int, default=9, help='number of board columns')
-    parser.add_argument('--board_height', type=int, default=6, help='number of board rows')
-    parser.add_argument('--square_size', type=float, default=1.0, help='square size (m)')
-    parser.add_argument('--rectified_dir', default='debug', help='rectified image directory')
-    parser.add_argument('--debug_dir', default='debug', help='debug output directory')
-    parser.add_argument('-o', '--save_file', default='calib.cfg', help='final calibration file')
-    parser.add_argument('image_patterns', nargs='?', default='*.jpg', help='input image patterns')
+    parser.add_argument('--board_width', type=int, default=9, help='number of board columns (9)')
+    parser.add_argument('--board_height', type=int, default=6, help='number of board rows (6)')
+    parser.add_argument('--square_size', type=float, default=1.0, help='square size (1.0 m)')
+    parser.add_argument('--rectified_dir', default='debug', help='rectified image directory (debug)')
+    parser.add_argument('--debug_dir', default='debug', help='debug output directory (debug)')
+    parser.add_argument('-o', '--save_file', default='calib.cfg', help='final calibration file (calib.cfg)')
+    parser.add_argument('image_patterns', nargs='?', default='*.jpg', help='input image patterns (*.jpg)')
 
     args = parser.parse_args()
     calibrate(**vars(args))
